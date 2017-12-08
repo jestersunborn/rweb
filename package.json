@@ -1,0 +1,34 @@
+{
+  "name": "rweb",
+  "version": "0.0.1",
+  "description": "React Webpack Electron Boilerplate",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jestersunborn/rweb.git"
+  },
+  "keywords": [
+    "electron",
+    "webpack",
+    "react",
+    "redux",
+    "react-router",
+    "redux-thunk",
+    "eslint",
+    "babel",
+    "boilerplate",
+    "node"
+  ],
+  "author": "Serhiy Boreyko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jestersunborn/rweb/issues"
+  },
+  "homepage": "https://github.com/jestersunborn/rweb#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13",
+  }
+}
