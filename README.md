@@ -11,7 +11,7 @@
 * [ESlint](https://eslint.org/)
 * [Babel](https://babeljs.io/)
 * ...
-* The full list of all dependencies availabel [here]()
+* The full list of all dependencies availabel [here](https://github.com/jestersunborn/rweb/blob/master/package.json)
 
 # Install:
 > ...
