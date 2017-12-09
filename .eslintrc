@@ -1,0 +1,12 @@
+extends: airbnb
+
+rules: {
+  no-console: warn,
+  no-unused-vars: warn
+}
+
+parser: babel-eslint
+
+globals: {
+  window: true
+}
