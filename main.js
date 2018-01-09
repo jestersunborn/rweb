@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu } = require('electron');
+const { app, BrowserWindow } = require('electron'); // eslint-disable-line
 
 const path = require('path');
 const url = require('url');
@@ -17,7 +17,8 @@ const createWindow = () => {
     slashes: true,
   }));
 
-  mainWindow.webContents.openDevTools()
+  // Comment next line to disable auto show dev tools every time you start the app
+  mainWindow.webContents.openDevTools();
 
   mainWindow.on('closed', () => {
     mainWindow = null;
