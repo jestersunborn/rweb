@@ -8,5 +8,19 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+    let bundlePath = './bundle/renderer.bundle.js';
+
+    if (typeof process !== 'undefined' && process.env.NODE_ENV === 'development') {
+      const port = process.env.PORT || 8080;
+      bundlePath = `http://127.0.0.1:${port}/bundle/renderer.bundle.js`;
+      const bundleScriptEl = document.createElement('script');
+      bundleScriptEl.src = bundlePath;
+      bundleScriptEl.async = true;
+      document.currentScript.parentNode.insertBefore(bundleScriptEl, document.currentScript);
+    } else {
+      require(bundlePath);
+    }
+  </script>
   </body>
 </html>
