@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import styles from './app.pcss';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -8,13 +10,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to RWEB (React + Webpack + Elecntron Boilerplate)</h2>
-        </div>
-        <p className="App-intro">
-          Hello World!
-        </p>
+      <div className={styles.app}>
+        <h2 className={styles.title}>Thank you for using <span className={styles.bold}>RWEB</span>!</h2>
+        <p className={styles.copyright}>by Serhiy Boreyko 2017 &#xa9;</p>
       </div>
     );
   }
