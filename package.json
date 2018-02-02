@@ -28,10 +28,13 @@
     "babel-preset-react-app": "^3.1.1",
     "babel-preset-react-hmre": "^1.1.1",
     "concurrently": "^3.5.1",
+    "copy-webpack-plugin": "^4.3.1",
     "cross-spawn": "^6.0.4",
     "css-loader": "^0.28.9",
     "dotenv": "^5.0.0",
     "electron": "^1.7.12",
+    "electron-builder": "^19.55.3",
+    "electron-packager": "^10.1.2",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-babel-module": "^4.0.0",
@@ -72,9 +75,13 @@
   "main": "./main.js",
   "scripts": {
     "start": "NODE_ENV=development concurrently \"babel-node ./config/server.js\" \"sleep 2 && electron .\"",
-    "bundle": "webpack",
+    "build": "NODE_ENV=production webpack --config ./config/webpack.config.js",
     "watch": "NODE_ENV=development babel-node server.js",
-    "start:prod": "webpack && electron ."
+    "start:prod": "NODE_ENV=production webpack --config ./config/webpack.config.js && electron ./build/main.js",
+    "pack": "electron-builder",
+    "package-mac": "electron-packager ./build/ --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager ./build/ rweb --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
+    "package-linux": "electron-packager ./build/ rweb --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/512x512.png --prune=true --out=release-builds"
   },
   "jest": {
     "collectCoverageFrom": [
