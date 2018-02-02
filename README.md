@@ -17,6 +17,13 @@
 git clone https://github.com/jestersunborn/rweb.git app-name
 cd app-name
 yarn
+```
+
+Change `package.json` file. Fill the package name, author, repo etc.
+
+And start writing awesome apps!
+
+```bash
 yarn start
 ```
 
