@@ -1,7 +1,7 @@
 # rweb
 > React + Webpack + Electron Boilerplate
 
-![rweb logo](./assets/icons/png/1024x1024.png =250x250)
+<img src="./assets/icons/png/1024x1024.png" alt="logo text" width="150">
 
 # Dependencies
 * [react](https://reactjs.org)
