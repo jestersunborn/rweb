@@ -3,17 +3,14 @@
 
 <img src="./assets/icons/png/1024x1024.png" alt="logo text" width="150">
 
-# Dependencies
-* [react](https://reactjs.org)
-* [react-router](https://github.com/ReactTraining/react-router)
-* [redux](https://redux.js.org/docs/introduction/)
-* [redux-thunk](https://github.com/gaearon/redux-thunk)
-* [webpack](https://github.com/webpack/webpack)
-* [Electron](https://electronjs.org/)
-* [ESlint](https://eslint.org/)
-* [Babel](https://babeljs.io/)
-* ...
-* The full list of all dependencies availabel [here](https://github.com/jestersunborn/rweb/blob/master/package.json)
+# What inside?
+`react`, `react-router`, `redux`, `redux-thunk`, `axios`, `webpack`, `css-modules`, `postcss`, `postcss-nested`, `electron`, `eslint` (Airbnb config), `babel` with `object-rest-spread` and  `transform-decorators-legacy` plugins.
+
+> The full list of all dependencies available [here](https://github.com/jestersunborn/rweb/blob/master/package.json)
+
+* babel config [here](https://github.com/jestersunborn/rweb/blob/master/.babelrc)
+* eslint config [here](https://github.com/jestersunborn/rweb/blob/master/.eslintrc)
+* editor config [here](https://github.com/jestersunborn/rweb/blob/master/.editorconfig)
 
 # Install:
 ```bash
