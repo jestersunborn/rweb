@@ -1,25 +1,6 @@
 "extends": "airbnb"
 "rules": {
-  "jsx-a11y/anchor-is-valid": "off",
-  "jsx-a11y/label-has-for": "off",
-  "jsx-a11y/click-events-have-key-events": "off",
-  "jsx-a11y/no-noninteractive-element-to-interactive-role": "off",
-  "react/prop-types": "off",
-  "react/jsx-filename-extension": "off",
-  "react/no-unused-state": "off",
-  "react/no-string-refs": "off",
-  "no-unused-vars": "warn",
-  "no-confusing-arrow": "off",
-  "arrow-parens": "off",
-  "max-len": "off",
-  "import/no-extraneous-dependencies": "off",
-  "import/extensions": "off",
-  "import/no-unresolved": "off",
-  "import/no-webpack-loader-syntax": "off",
-  "no-shadow": "off",
-  "no-console": ["warn", { allow: ["warn", "error"] }],
-  "no-useless-escape": "off",
-  "linebreak-style": "off",
+  "react/jsx-filename-extension": "off"
 }
 "settings": {
   "import/resolver": {

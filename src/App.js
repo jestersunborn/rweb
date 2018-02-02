@@ -11,8 +11,8 @@ class App extends Component {
   render() {
     return (
       <div className={styles.app}>
-        <h2 className={styles.title}>Thank you for using <span className={styles.bold}>RWEB</span>!</h2>
-        <p className={styles.copyright}>by Serhiy Boreyko 2017 &#xa9;</p>
+        <h2 className={styles.title}>RWEB</h2>
+        <p className={styles.copyright}>by Serhiy Boreyko 2018 &#xa9;</p>
       </div>
     );
   }
