@@ -1,7 +1,7 @@
 # rweb
 > React + Webpack + Electron Boilerplate
 
-![rweb logo](./assets/icons/png/512x512.png)
+![rweb logo](./assets/icons/png/1024x1024.png)
 
 # Dependencies
 * [react](https://reactjs.org)
