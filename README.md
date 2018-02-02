@@ -1,6 +1,8 @@
 # rweb
 > React + Webpack + Electron Boilerplate
 
+![rweb logo](./assets/icons/png/512x512.png)
+
 # Dependencies
 * [react](https://reactjs.org)
 * [react-router](https://github.com/ReactTraining/react-router)
@@ -14,10 +16,20 @@
 * The full list of all dependencies availabel [here](https://github.com/jestersunborn/rweb/blob/master/package.json)
 
 # Install:
-> ...
+```bash
+git clone https://github.com/jestersunborn/rweb.git app-name
+cd app-name
+yarn
+yarn start
+```
+
+# Production build:
+```
+yarn build
+```
 
 # Build:
-> ...
+> coming soon
 
 # Package:
-> ...
+> coming soon
