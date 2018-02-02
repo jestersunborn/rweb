@@ -1,3 +1,4 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
@@ -17,8 +18,8 @@ const config = {
   target: 'electron-renderer',
   output: {
     filename: 'renderer.bundle.js',
-    path: path.join(__dirname, '/../bundle'),
-    publicPath: `http://localhost:${port}/bundle/`,
+    path: path.join(__dirname, '/../build'),
+    publicPath: `http://localhost:${port}/build/`,
     libraryTarget: 'commonjs2',
   },
   resolve: {
@@ -139,6 +140,10 @@ const config = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new CopyWebpackPlugin([
+      { from: path.join(__dirname, '/../main.js'), to: path.join(__dirname, '/../build/main.js') },
+      { from: path.join(__dirname, '/../public/index.html'), to: path.join(__dirname, '/../build/index.html') },
+    ]),
   ],
 };
 

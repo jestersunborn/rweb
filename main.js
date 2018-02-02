@@ -12,7 +12,7 @@ const createWindow = () => {
   });
 
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'public/index.html'),
+    pathname: (process.env.NODE_ENV === 'development') ? path.join(__dirname, '/public/index.html') : path.join(__dirname, '/index.html'),
     protocol: 'file:',
     slashes: true,
   }));
